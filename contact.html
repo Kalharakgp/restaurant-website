@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Grand Bistro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col">
+<header class="fixed top-0 z-50 w-full bg-black/40 backdrop-blur-lg border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-white uppercase">Grand Bistro</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Menu</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Experience</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Reservations</a>
+<a class="text-sm font-bold text-primary" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 size-4 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center">3</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 pt-28 pb-12">
+<div class="mb-12">
+<div class="relative h-48 md:h-64 rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: linear-gradient(to right, rgba(34, 16, 16, 0.9), rgba(34, 16, 16, 0.2)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo0icSCnvLWX5-bvTGaehGE4HFiOejyTuWr0h7Gvf96VASOWjE5OZ5CBZc9Ld60vl6EQNDoIlp2nIQaklwf4s3iwU_RM-uqVpmPkgIuYwBDxbPfk3M3kt63tVvfWzSRpwKSTp13mL9KxYYQK3gevUg2vmr1KeuGrrkOJC3RNNHJYetLxeE04G3dB1CmEYWoVLRiyCMu-xNquHHMAN9k9TKDuDTMpiaaW4sqvBsHGp1phlNf7xhhGNyF594vrNKXnSSMkZIQKfp27Of');"></div>
+<div class="relative h-full flex flex-col justify-center p-8 md:p-12">
+<span class="inline-block px-3 py-1 bg-primary text-white text-xs font-bold rounded-full mb-4">GET IN TOUCH</span>
+<h2 class="text-3xl md:text-5xl font-extrabold text-white mb-2">Contact Us</h2>
+<p class="text-slate-300 max-w-lg text-sm md:text-base">We're here to help with your reservations, event inquiries, or any feedback you may have about your experience.</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div>
+<h3 class="text-2xl font-bold mb-6">Our Location</h3>
+<div class="flex gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10">
+<div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="font-bold">Address</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">123 Culinary Avenue, Gourmet District<br/>Manhattan, NY 10013</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10">
+<div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="font-bold">Phone</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">+1 (212) 555-0198</p>
+</div>
+</div>
+<div class="flex gap-4 p-6 bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10">
+<div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="font-bold">Email</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm">hello@grandbistro.com</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Follow Our Story</h3>
+<div class="flex gap-4">
+<a class="size-10 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="size-10 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="size-10 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined">play_circle</span></a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-8 rounded-xl border border-slate-200 dark:border-white/10">
+<h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+<form class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Name</label>
+<input class="w-full bg-slate-50 dark:bg-background-dark/50 border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Email Address</label>
+<input class="w-full bg-slate-50 dark:bg-background-dark/50 border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Subject</label>
+<select class="w-full bg-slate-50 dark:bg-background-dark/50 border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary">
+<option>General Inquiry</option>
+<option>Reservation Support</option>
+<option>Private Event</option>
+<option>Feedback</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-slate-500">Message</label>
+<textarea class="w-full bg-slate-50 dark:bg-background-dark/50 border-slate-200 dark:border-white/10 rounded-lg px-4 py-3 text-sm focus:ring-primary focus:border-primary" placeholder="How can we help you?" rows="5"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-lg shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined">send</span>
+                        Send Message
+                    </button>
+</form>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">restaurant</span>
+</div>
+<h2 class="text-lg font-bold">Grand Bistro</h2>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Award-winning flavors and an unforgettable dining experience since 1998.</p>
+</div>
+<div>
+<h3 class="font-bold mb-4">Quick Links</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reservations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Hours</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li class="flex justify-between"><span>Mon - Thu:</span> <span>11am - 10pm</span></li>
+<li class="flex justify-between"><span>Fri - Sat:</span> <span>11am - 11pm</span></li>
+<li class="flex justify-between"><span>Sunday:</span> <span>10am - 9pm</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Newsletter</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Join for exclusive tasting event invites.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-white/5 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-slate-200 dark:border-white/5 text-center text-xs text-slate-400">
+            © 2024 Grand Bistro. All Rights Reserved. Crafted with passion.
+        </div>
+</footer>
+<button class="md:hidden fixed bottom-6 right-6 size-14 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center z-50">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute -top-1 -right-1 size-6 bg-white text-primary text-xs font-bold rounded-full flex items-center justify-center border-2 border-primary">3</span>
+</button>
+
+</body></html>

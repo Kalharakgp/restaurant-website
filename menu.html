@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Food Details | Grand Bistro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col">
+<header class="fixed top-0 z-50 w-full bg-black/40 backdrop-blur-lg border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-white uppercase">Grand Bistro</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Home</a>
+<a class="text-sm font-bold text-primary" href="#">Menu</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Experience</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Reservations</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 size-4 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center">3</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 pt-28 pb-12">
+<nav class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-8">
+<a class="hover:text-primary transition-colors" href="#">Menu</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Main Course</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-slate-900 dark:text-white font-medium">Truffle Ribeye Steak</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="space-y-4">
+<div class="relative aspect-square rounded-2xl overflow-hidden group">
+<img alt="Truffle Ribeye Steak" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzE36K5J9v2Dn55Ah1zbxh0xUosO7ppDEG4z264EJUe2wsfRZ7SpwZzP1zZ2lBbhGcAyk1IaCFw8y3lR8iiYQFhwcaEb8DHXedsT2Lg-P3vxHAvQNPKRNcyTOKq9IjSSGTasEO1MPlnspIbaVgsYhtKtCZswbwy6NTh08h80IOaZGKotZ9kr_Ah23xRUZxR6erK2bmmCKGHOn089xzWoi8iUzUETc4hBzz7MJPP4P3mfU5aQZlAOZRXhLlPVKFbZ3WfSREGA1dUKoL"/>
+<div class="absolute top-4 right-4 flex flex-col gap-2">
+<button class="size-12 bg-white/90 dark:bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center text-slate-900 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="size-12 bg-white/90 dark:bg-black/40 backdrop-blur-md rounded-full flex items-center justify-center text-slate-900 dark:text-white hover:text-primary transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square rounded-xl overflow-hidden border-2 border-primary cursor-pointer">
+<img alt="Detail 1" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzE36K5J9v2Dn55Ah1zbxh0xUosO7ppDEG4z264EJUe2wsfRZ7SpwZzP1zZ2lBbhGcAyk1IaCFw8y3lR8iiYQFhwcaEb8DHXedsT2Lg-P3vxHAvQNPKRNcyTOKq9IjSSGTasEO1MPlnspIbaVgsYhtKtCZswbwy6NTh08h80IOaZGKotZ9kr_Ah23xRUZxR6erK2bmmCKGHOn089xzWoi8iUzUETc4hBzz7MJPP4P3mfU5aQZlAOZRXhLlPVKFbZ3WfSREGA1dUKoL"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Detail 2" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo0icSCnvLWX5-bvTGaehGE4HFiOejyTuWr0h7Gvf96VASOWjE5OZ5CBZc9Ld60vl6EQNDoIlp2nIQaklwf4s3iwU_RM-uqVpmPkgIuYwBDxbPfk3M3kt63tVvfWzSRpwKSTp13mL9KxYYQK3gevUg2vmr1KeuGrrkOJC3RNNHJYetLxeE04G3dB1CmEYWoVLRiyCMu-xNquHHMAN9k9TKDuDTMpiaaW4sqvBsHGp1phlNf7xhhGNyF594vrNKXnSSMkZIQKfp27Of"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Detail 3" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWP2FWv9W8EkFrFwHnPY9A_ArpW1x9mRp9f8q7C_Ue5MmcV-3LOShh7V5fSyYrqaVzp3cyKmflxZzkqi9lXfk3hWDrKA0yP0iftWSpWm1upL2Q4fmKtouRPuoIvA9goeEEJD-LbRNroBS2AVYc-HDchyJJAuCLs5sL0anma3lA4b1Noun2tIy52XUgc0HXEsu4OslA0ejv6JdX18LeW0UtM52QDgh5a7TRX9VQF-IC6Ro-ui2sEiZ-ZtjUhx1swQQblfXhIHayynPS"/>
+</div>
+<div class="aspect-square rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 cursor-pointer opacity-70 hover:opacity-100 transition-opacity">
+<img alt="Detail 4" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6ah_p4phPEZHYLcj5c9vGjrDCxOtFWyhpMUrV_Tx8IyFM63dhrf2_LvOfsAb37t8x3ITGz7jZIW362qe1QNRIJwg-XvKlveo1pBU90AG-zH32PNZbBIQmKlKspKaYr76iTKTEBUNBSAj7q_aD_bVUfWzmBQh1FFZfC-8CvJsg-CE181lFJHzU0-GbiBrlXec7O9oBwG7sIK4lCdyMZG0rwr9BOhnLbQO5DySSE0XdCnKWLCcEHARb_5YR7giAljl2SUOuY7gA89wC"/>
+</div>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">SIGNATURE DISH</span>
+<span class="flex items-center text-xs text-red-500 font-bold">
+<span class="material-symbols-outlined text-xs mr-0.5">fiber_manual_record</span>NON-VEG
+                </span>
+</div>
+<h1 class="text-4xl md:text-5xl font-black mb-4">Truffle Ribeye Steak</h1>
+<div class="flex items-center gap-4 mb-6">
+<div class="flex text-yellow-500">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined">star_half</span>
+</div>
+<span class="text-sm text-slate-500 dark:text-slate-400 font-medium">4.8 (124 reviews)</span>
+</div>
+<p class="text-3xl font-bold text-slate-900 dark:text-white mb-8">$34.00</p>
+<div class="prose prose-slate dark:prose-invert max-w-none mb-8">
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                    Indulge in our premium aged Prime Ribeye, expertly seasoned and flame-grilled to perfection. Finished with our signature garlic-herb truffle butter and served alongside roasted Yukon gold potatoes and a bouquet of seasonal organic greens.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-6 mb-10 p-6 bg-slate-100 dark:bg-white/5 rounded-2xl border border-slate-200 dark:border-white/10">
+<div>
+<h4 class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Calories</h4>
+<p class="text-lg font-bold">850 kcal</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Prep Time</h4>
+<p class="text-lg font-bold">20-25 mins</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Portion</h4>
+<p class="text-lg font-bold">350g</p>
+</div>
+<div>
+<h4 class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-widest mb-1">Allergens</h4>
+<p class="text-lg font-bold">Dairy, Garlic</p>
+</div>
+</div>
+<div class="mt-auto space-y-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center h-14 bg-slate-100 dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 px-4">
+<button class="size-8 flex items-center justify-center hover:text-primary transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<span class="w-12 text-center font-bold text-lg">1</span>
+<button class="size-8 flex items-center justify-center hover:text-primary transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<button class="flex-1 h-14 bg-primary hover:bg-primary/90 text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-primary/20 transition-all active:scale-95">
+<span class="material-symbols-outlined">shopping_basket</span>
+                        Add to Order
+                    </button>
+</div>
+<button class="w-full h-14 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-slate-50 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">event_seat</span>
+                    Book a Table to Enjoy This
+                </button>
+</div>
+</div>
+</div>
+<div class="mt-24">
+<div class="flex items-end justify-between mb-8">
+<div>
+<h3 class="text-2xl font-bold mb-2">Perfectly Paired</h3>
+<p class="text-slate-500 dark:text-slate-400">Complete your meal with these selections.</p>
+</div>
+<button class="text-primary font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                View All <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-lg transition-all">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Paired item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyQrXV7qQLqMdUpZFo49V9dht4BTK6TXWFrOlKILrQfl-TkEn1tVuFciVsEy9IHBkKl6kjd3qkDM5aPrQvF3mONEFTZpQ-NbTr3Vn_8ZcXOk7DeyQVj4h6ZjdvlC9S1cUhiEFXJaJJw92kaSw35BWf_pHga1JyDJm3oV_uuHSn-TiWGCgjKyOIM237F4OBzAR8lBM_tr0anlaoPTW5aJ6Q3dakfYfZIlN2M3HMm_d3SFLiHR_p-1CccMfOaJkj71ONuKIeLbPQ_KR_"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-1">Wild Mushroom Risotto</h4>
+<p class="text-lg font-bold text-primary">$22.00</p>
+</div>
+</div>
+<div class="group bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-lg transition-all">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Paired item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf-aiHryBIkWrW0nhDkCNvcVbaLQf-aWmEfxFCU_ohrgwpT7xeagFFaXqnNHYNmSV3QJ_ZA4gxXa8cF0k8dX4ZIPD23y3cFax-BrDeyRCy_PcdeFTn-qtpI6tzG7sjoi36PNbFJ_LsnXJq9NLLA8yhmpakGMislgfEdEPymVa_E5dpmExYMqRDulZsDwawUiLc_WUeY46oPPjtmTWjsN8IL-S3Okmtw4q72pXuBEagV9uPLlracOc4kFG9l_HozrGhVLyu35ZO-ZoL"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-1">Roasted Beet Salad</h4>
+<p class="text-lg font-bold text-primary">$16.00</p>
+</div>
+</div>
+<div class="group bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-lg transition-all">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Paired item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk6yE0lwYiz5lSrqkZ5eUYi76HQt1IETywus6P-muu_lpBIvYcrWSvxPHz4Fe5G-b6PKHAO1gpFYmroHQoNAodn1-wJnAP2Yp2ZKuOeHQRRtXVeF8xTXjeSU-tkIUr0PnT6L5UXPW02UujKY4RzCMyOhijpGdOoKc_y5xBfsLW4YsLB0LW8TJJswZ_qlQk9a7A1iRprK_sHDDBzhJtMT0Gy8hKQ2bl_73viE5xUg7NIpkSobkjtW33fq5QhrXv2HPG9n_EF6JAu3NX"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-1">Chocolate Lava Cake</h4>
+<p class="text-lg font-bold text-primary">$12.00</p>
+</div>
+</div>
+<div class="group bg-white dark:bg-white/5 rounded-xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-lg transition-all">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Paired item" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6ah_p4phPEZHYLcj5c9vGjrDCxOtFWyhpMUrV_Tx8IyFM63dhrf2_LvOfsAb37t8x3ITGz7jZIW362qe1QNRIJwg-XvKlveo1pBU90AG-zH32PNZbBIQmKlKspKaYr76iTKTEBUNBSAj7q_aD_bVUfWzmBQh1FFZfC-8CvJsg-CE181lFJHzU0-GbiBrlXec7O9oBwG7sIK4lCdyMZG0rwr9BOhnLbQO5DySSE0XdCnKWLCcEHARb_5YR7giAljl2SUOuY7gA89wC"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold mb-1">Truffle Arancini</h4>
+<p class="text-lg font-bold text-primary">$14.00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">restaurant</span>
+</div>
+<h2 class="text-lg font-bold">Grand Bistro</h2>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Award-winning flavors and an unforgettable dining experience since 1998.</p>
+</div>
+<div>
+<h3 class="font-bold mb-4">Quick Links</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reservations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Hours</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li class="flex justify-between"><span>Mon - Thu:</span> <span>11am - 10pm</span></li>
+<li class="flex justify-between"><span>Fri - Sat:</span> <span>11am - 11pm</span></li>
+<li class="flex justify-between"><span>Sunday:</span> <span>10am - 9pm</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Newsletter</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Join for exclusive tasting event invites.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-white/5 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-slate-200 dark:border-white/5 text-center text-xs text-slate-400">
+        © 2024 Grand Bistro. All Rights Reserved. Crafted with passion.
+    </div>
+</footer>
+<button class="md:hidden fixed bottom-6 right-6 size-14 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center z-50">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute -top-1 -right-1 size-6 bg-white text-primary text-xs font-bold rounded-full flex items-center justify-center border-2 border-primary">3</span>
+</button>
+
+</body></html>

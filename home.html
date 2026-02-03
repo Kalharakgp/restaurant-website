@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home | Grand Bistro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col">
+<header class="fixed top-0 z-50 w-full bg-black/40 backdrop-blur-lg border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-white uppercase">Grand Bistro</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-sm font-bold text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Menu</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Experience</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Reservations</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 size-4 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center">3</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="relative h-[90vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/50 z-10"></div>
+<img alt="Gourmet Dining Background" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo0icSCnvLWX5-bvTGaehGE4HFiOejyTuWr0h7Gvf96VASOWjE5OZ5CBZc9Ld60vl6EQNDoIlp2nIQaklwf4s3iwU_RM-uqVpmPkgIuYwBDxbPfk3M3kt63tVvfWzSRpwKSTp13mL9KxYYQK3gevUg2vmr1KeuGrrkOJC3RNNHJYetLxeE04G3dB1CmEYWoVLRiyCMu-xNquHHMAN9k9TKDuDTMpiaaW4sqvBsHGp1phlNf7xhhGNyF594vrNKXnSSMkZIQKfp27Of"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-4 md:px-10 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1.5 bg-primary/20 backdrop-blur-md text-primary text-sm font-bold rounded-full mb-6 border border-primary/30">ESTABLISHED 1998</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">Experience the Art of <span class="text-primary">Fine Dining</span></h1>
+<p class="text-lg text-slate-300 mb-10 max-w-lg">From farm to table, we bring you the most exquisite flavors and an atmosphere that speaks of luxury and comfort.</p>
+<div class="flex flex-wrap gap-4">
+<a class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all hover:scale-105" href="#">Book a Table</a>
+<a class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 font-bold rounded-xl hover:bg-white/20 transition-all" href="#">Explore Menu</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 max-w-7xl mx-auto px-4 md:px-10">
+<div class="text-center mb-16">
+<h2 class="text-primary font-bold tracking-widest text-sm uppercase mb-3">Our Specialties</h2>
+<h3 class="text-4xl font-extrabold dark:text-white">Curated Just For You</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+<img alt="Ribeye Steak" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzE36K5J9v2Dn55Ah1zbxh0xUosO7ppDEG4z264EJUe2wsfRZ7SpwZzP1zZ2lBbhGcAyk1IaCFw8y3lR8iiYQFhwcaEb8DHXedsT2Lg-P3vxHAvQNPKRNcyTOKq9IjSSGTasEO1MPlnspIbaVgsYhtKtCZswbwy6NTh08h80IOaZGKotZ9kr_Ah23xRUZxR6erK2bmmCKGHOn089xzWoi8iUzUETc4hBzz7MJPP4P3mfU5aQZlAOZRXhLlPVKFbZ3WfSREGA1dUKoL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold text-white mb-2">Signature Steaks</h4>
+<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Dry-aged prime beef cuts seasoned to perfection.</p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+<img alt="Seafood" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCagQyIOQIXKogbkXAlfzPqr3WYhLeQtINN16AiR83dGc4p7d1GTq-18gnv5ODVM3p1Z4ZB00gq-pYK_rv2bN5LylDb6nlb10vm-e3KlzUkI5_N96odI6SboQ_ODBuFk3o_lGjCmcnR5eSyYxxZicwv0wkwa_KpRSpptTWY49Z0XAc_aLolnagX9OlZHrAl_s8IsetdwnznU4_7D3eO6NZ4-j-24NP6Bf1Xle2fjYtd7Cl3L_JMzgZT8smUJDsSEsNCbPO1RsaS0DZk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold text-white mb-2">Fresh Catch</h4>
+<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Sustainably sourced seafood prepared daily.</p>
+</div>
+</div>
+<div class="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer">
+<img alt="Desserts" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk6yE0lwYiz5lSrqkZ5eUYi76HQt1IETywus6P-muu_lpBIvYcrWSvxPHz4Fe5G-b6PKHAO1gpFYmroHQoNAodn1-wJnAP2Yp2ZKuOeHQRRtXVeF8xTXjeSU-tkIUr0PnT6L5UXPW02UujKY4RzCMyOhijpGdOoKc_y5xBfsLW4YsLB0LW8TJJswZ_qlQk9a7A1iRprK_sHDDBzhJtMT0Gy8hKQ2bl_73viE5xUg7NIpkSobkjtW33fq5QhrXv2HPG9n_EF6JAu3NX"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h4 class="text-2xl font-bold text-white mb-2">Artisan Desserts</h4>
+<p class="text-slate-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">Handcrafted sweets to conclude your journey.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="mt-20 border-t border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">restaurant</span>
+</div>
+<h2 class="text-lg font-bold">Grand Bistro</h2>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Award-winning flavors and an unforgettable dining experience since 1998.</p>
+</div>
+<div>
+<h3 class="font-bold mb-4">Quick Links</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reservations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Hours</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li class="flex justify-between"><span>Mon - Thu:</span> <span>11am - 10pm</span></li>
+<li class="flex justify-between"><span>Fri - Sat:</span> <span>11am - 11pm</span></li>
+<li class="flex justify-between"><span>Sunday:</span> <span>10am - 9pm</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Newsletter</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Join for exclusive tasting event invites.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-white/5 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary placeholder:text-slate-400" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-slate-200 dark:border-white/5 text-center text-xs text-slate-400">
+            © 2024 Grand Bistro. All Rights Reserved. Crafted with passion.
+        </div>
+</footer>
+<button class="md:hidden fixed bottom-6 right-6 size-14 rounded-full bg-primary text-white shadow-2xl flex items-center justify-center z-50">
+<span class="material-symbols-outlined text-2xl">shopping_cart</span>
+<span class="absolute -top-1 -right-1 size-6 bg-white text-primary text-xs font-bold rounded-full flex items-center justify-center border-2 border-primary">3</span>
+</button>
+
+</body></html>

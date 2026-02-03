@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | Grand Bistro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Work Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col">
+<header class="fixed top-0 z-50 w-full bg-black/40 backdrop-blur-lg border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 md:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-10 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-white uppercase">Grand Bistro</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Menu</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Experience</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Reservations</a>
+<a class="text-sm font-medium text-slate-300 hover:text-white transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute top-1 right-1 size-4 bg-primary text-white text-[10px] font-bold rounded-full flex items-center justify-center">3</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-full text-white bg-white/10 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex items-center justify-center pt-24 pb-12 px-4">
+<div class="w-full max-w-md">
+<div class="bg-white dark:bg-white/5 rounded-2xl border border-slate-200 dark:border-white/10 shadow-2xl overflow-hidden">
+<div class="relative h-32 bg-cover bg-center" style="background-image: linear-gradient(to bottom, rgba(34, 16, 16, 0.4), rgba(34, 16, 16, 0.9)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBo0icSCnvLWX5-bvTGaehGE4HFiOejyTuWr0h7Gvf96VASOWjE5OZ5CBZc9Ld60vl6EQNDoIlp2nIQaklwf4s3iwU_RM-uqVpmPkgIuYwBDxbPfk3M3kt63tVvfWzSRpwKSTp13mL9KxYYQK3gevUg2vmr1KeuGrrkOJC3RNNHJYetLxeE04G3dB1CmEYWoVLRiyCMu-xNquHHMAN9k9TKDuDTMpiaaW4sqvBsHGp1phlNf7xhhGNyF594vrNKXnSSMkZIQKfp27Of');">
+<div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+<h2 class="text-2xl font-bold">Join the Bistro</h2>
+<p class="text-xs text-slate-300">Create your account for exclusive rewards</p>
+</div>
+</div>
+<div class="p-8">
+<form class="space-y-5">
+<div class="space-y-1">
+<label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">person</span>
+<input class="w-full pl-10 bg-slate-100 dark:bg-white/5 border-none rounded-xl text-sm focus:ring-2 focus:ring-primary h-12 transition-all" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Email Address</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">mail</span>
+<input class="w-full pl-10 bg-slate-100 dark:bg-white/5 border-none rounded-xl text-sm focus:ring-2 focus:ring-primary h-12 transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">lock</span>
+<input class="w-full pl-10 bg-slate-100 dark:bg-white/5 border-none rounded-xl text-sm focus:ring-2 focus:ring-primary h-12 transition-all" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<div class="flex items-center gap-3 py-2">
+<input class="rounded border-slate-300 dark:border-white/10 text-primary focus:ring-primary bg-transparent size-4" id="terms" type="checkbox"/>
+<label class="text-xs text-slate-500 dark:text-slate-400" for="terms">I agree to the <a class="text-primary hover:underline" href="#">Terms of Service</a> and <a class="text-primary hover:underline" href="#">Privacy Policy</a></label>
+</div>
+<button class="w-full h-12 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all hover:scale-[1.02] active:scale-[0.98]" type="submit">
+                            Create Account
+                        </button>
+<div class="relative flex items-center py-2">
+<div class="flex-grow border-t border-slate-200 dark:border-white/10"></div>
+<span class="flex-shrink mx-4 text-xs text-slate-500 dark:text-slate-400 font-medium">Or continue with</span>
+<div class="flex-grow border-t border-slate-200 dark:border-white/10"></div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 h-11 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-xs font-bold hover:bg-slate-200 dark:hover:bg-white/10 transition-colors" type="button">
+<img alt="Google" class="size-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8EksSLE-fT9KwtzHXdIpjvmVPVpv4JVI7XAptgMq35C0gfuBgVjbKlWG6rAnGRKo6-cZgGCrQVAEMEDWi3gdr874PikRcCAnHir9lMHe4o6oO9tpJCnZ35kATtAZNrpz-4NGoXK1uu2RaY73XWEHTUpbzVMJFyUhqXH7FMyX3Jz5ZGfQEeBwFe87gpsJfNY4UAmRaSg0DcYAdJXPS_7YoY04DOxYHeKuXGXEnllWZ870wt3EzDXoRrpXH68fQANEMFkfmVV90zEo_"/> Google
+                            </button>
+<button class="flex items-center justify-center gap-2 h-11 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl text-xs font-bold hover:bg-slate-200 dark:hover:bg-white/10 transition-colors" type="button">
+<span class="material-symbols-outlined text-lg">brand_awareness</span> Apple
+                            </button>
+</div>
+</form>
+<p class="mt-8 text-center text-sm text-slate-500 dark:text-slate-400">
+                        Already have an account? <a class="text-primary font-bold hover:underline" href="#">Log in</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-slate-200 dark:border-white/10 bg-white dark:bg-background-dark py-12">
+<div class="max-w-7xl mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-xl">restaurant</span>
+</div>
+<h2 class="text-lg font-bold">Grand Bistro</h2>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400">Award-winning flavors and an unforgettable dining experience since 1998.</p>
+</div>
+<div>
+<h3 class="font-bold mb-4">Quick Links</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li><a class="hover:text-primary transition-colors" href="#">Menu</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Reservations</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Private Events</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Hours</h3>
+<ul class="text-sm text-slate-500 dark:text-slate-400 space-y-2">
+<li class="flex justify-between"><span>Mon - Thu:</span> <span>11am - 10pm</span></li>
+<li class="flex justify-between"><span>Fri - Sat:</span> <span>11am - 11pm</span></li>
+<li class="flex justify-between"><span>Sunday:</span> <span>10am - 9pm</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Newsletter</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-4">Join for exclusive tasting event invites.</p>
+<div class="flex gap-2">
+<input class="flex-1 bg-slate-100 dark:bg-white/5 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-10 mt-12 pt-8 border-t border-slate-200 dark:border-white/5 text-center text-xs text-slate-400">
+            © 2024 Grand Bistro. All Rights Reserved. Crafted with passion.
+        </div>
+</footer>
+
+</body></html>
